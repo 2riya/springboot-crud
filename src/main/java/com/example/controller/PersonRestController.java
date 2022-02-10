@@ -22,13 +22,13 @@ public class PersonRestController {
 	@Autowired
 	private IPersonService personService;
 
-	@RequestMapping(path = "/people")
+	@GetMapping(value = "/people")
 	public ResponseEntity<List<Person>> people() {
 		List<Person> list = personService.listPerson();
 		return new ResponseEntity<>(list, HttpStatus.OK);
 	}
 
-	@GetMapping(path = "/search/{name}")
+	@GetMapping(value = "/search/{name}")
 	public ResponseEntity<List<Person>> search(
 			@PathVariable(name = "name", required = true) String name) {
 		List<Person> list = personService.search(name);

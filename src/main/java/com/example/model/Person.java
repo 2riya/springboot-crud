@@ -3,8 +3,6 @@ package com.example.model;
 public class Person {
 	private int id;
 	private String name;
-    private String job;
-    private boolean gender;
     private String birthDay;
 
 	public Person() {
@@ -27,22 +25,6 @@ public class Person {
 		this.name = name;
 	}
 
-	public String getJob() {
-		return job;
-	}
-
-	public void setJob(String job) {
-		this.job = job;
-	}
-
-	public boolean isGender() {
-		return gender;
-	}
-
-	public void setGender(boolean gender) {
-		this.gender = gender;
-	}
-
 	public String getBirthDay() {
 		return birthDay;
 	}
@@ -51,12 +33,10 @@ public class Person {
 		this.birthDay = birthDay;
 	}
 
-	public Person(int id, String name, String job, boolean gender, String birthDay) {
+	public Person(int id, String name, String birthday) {
 		this.id = id;
 		this.name = name;
-		this.job = job;
-		this.gender = gender;
-		this.birthDay = birthDay;
+		this.birthDay = birthday;
 	}
 
 }	

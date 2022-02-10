@@ -14,9 +14,9 @@ public class PersonRepo {
     private static List<Person> list = new ArrayList<Person>();
 
     static {
-        list.add(new Person(1, "Trinh Minh Cuong", "Developer", true, "1975-11-27"));
-        list.add(new Person(2, "Mary Jane", "Banker", false, "1980-05-24"));
-        list.add(new Person(3, "Tom Sawyer", "Taxi Driver", true, "1990-08-09"));
+        list.add(new Person(1, "Trinh Minh Cuong", "1975-11-27"));
+        list.add(new Person(2, "Mary Jane", "1980-05-24"));
+        list.add(new Person(3, "Tom Sawyer","1990-08-09"));
     }
 
     public void getAll() {
@@ -37,8 +37,6 @@ public class PersonRepo {
         Person obj = new Person();
         obj.setId(p.getId());
         obj.setName(p.getName());
-        obj.setJob(p.getJob());
-        obj.setGender(p.isGender());
         obj.setBirthDay(p.getBirthDay());
 
         list.add(obj);
@@ -64,8 +62,6 @@ public class PersonRepo {
         Person p = new Person();
         p.setId(id);
         p.setName(person.getName());
-        p.setJob(person.getJob());
-        p.setGender(person.isGender());
         p.setBirthDay(person.getBirthDay());
         list.set(idx, p);
 
