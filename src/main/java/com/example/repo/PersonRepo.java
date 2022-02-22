@@ -14,9 +14,9 @@ public class PersonRepo {
     private static List<Person> list = new ArrayList<Person>();
 
     static {
-        list.add(new Person(1, "Trinh Minh Cuong", "1975-11-27"));
-        list.add(new Person(2, "Mary Jane", "1980-05-24"));
-        list.add(new Person(3, "Tom Sawyer","1990-08-09"));
+        list.add(new Person(1, "Person A", "1975-11-27"));
+        list.add(new Person(2, "Person B", "1980-05-24"));
+        list.add(new Person(3, "Person C","1990-08-09"));
     }
 
     public void getAll() {
