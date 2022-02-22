@@ -6,4 +6,4 @@ phases:
 
 artifacts:
   files:
-  - target/*.jar
+  - target/springboot-crud-0.0.1.jar
