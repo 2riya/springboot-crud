@@ -5,11 +5,11 @@ phases:
       java: corretto11
   build:
     commands:
-    - mvn test
+    - mvn clean package
   post_build:
     commands:
-    - mvn package
+    - mv target/*.jar app.jar
 
 artifacts:
   files:
-  - target/springboot-crud-0.0.1.jar
+  - app.jar
